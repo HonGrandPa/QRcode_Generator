@@ -1,0 +1,22 @@
+<%- include("partials/header.ejs") %>
+
+
+    <!--if there is no input-->
+    <section>
+        <% if (locals.urlToGenerate) {%>
+
+            <div class="after">
+            <h1 class="after">Here is the QRcode for the URL</h1>
+            <img class="after" src="/qr_img.png" alt="QR code">
+        </div>
+
+            <% } else { %>
+                <h1 class="before">Welcome to Hon GrandPa's QRcode Generator</h1>
+
+                <form action="/submit" method="POST" class="container">
+                    <input type="text" name="url" placeholder="Please Place Your URL Here ^3^" required>
+                    <input type="submit" name="Generate" value="Submit">
+                </form>
+                <% } %>
+    </section>
+    <%- include("partials/footer.ejs")%>

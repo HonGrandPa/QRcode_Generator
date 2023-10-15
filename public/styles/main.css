@@ -1,0 +1,98 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #4592AF;
+}
+
+section {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    margin-left: 10%;
+    
+}
+
+
+h1.before{
+
+    color: #F6F5F5;
+    display: inline-block;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3.5rem;
+    width: 94%;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 5px solid #F6F5F5; 
+    animation:
+        typing 2s steps(42),
+        cursor .4s step-end infinite alternate;
+
+
+}
+
+
+h1.after{
+
+    text-align: center;
+    color: #F6F5F5;
+    display: inline-block;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 3.5rem;
+    width: 100%;
+    
+    
+
+}
+
+div.after {
+    margin-right: 10%;
+}
+
+img.after{
+    padding-left: 40%;
+}
+form {
+    margin-right: 12%;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+}
+
+.container > [type="text"] {
+
+ height: 2rem;
+ width: 800px;
+ font-family: 'Cute Font', sans-serif;
+ font-size: 1.8rem;
+ border-radius: 25px;
+ padding-left: 10px;
+}
+
+.container > [type="submit"] {
+
+    margin-top: 5%;
+    height: 50px;
+    width: 120px;
+    border-radius: 25px;
+    font-family: 'Cute Font', sans-serif;
+    font-size: 1.8rem;
+}
+
+
+@keyframes cursor {
+
+    60% {border-color: transparent}
+    
+  }
+
+  @keyframes typing {
+    from {width: 0;}
+  }
